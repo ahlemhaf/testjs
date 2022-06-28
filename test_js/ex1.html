@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const tableau=[19, 5,42, 2, 77];
+  
+    min1=Math.min(...tableau); 
+    var index =tableau.indexOf(min1);
+    tableau.splice(index,1)
+    console.log(tableau);
+
+    min2=Math.min(...tableau); 
+    var index2 =tableau.indexOf(min2);
+    tableau.splice(index2,1)
+    console.log(tableau);
+    var somme=min1+min2
+    alert('la somme est:'+somme)
+
+</script>
+</body>
+</html>
